@@ -1,0 +1,112 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgb(237,33,58), rgb(147,41,30));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.glass-card {
+    height: fit-content;
+    width: fit-content;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    padding: 3rem;
+    flex-direction: column;
+    backdrop-filter: blur(20px);
+    transform: 0.5s;
+    color: #fff;
+    z-index: 1;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.container-input {
+    display: flex;
+    flex-direction: column;
+    max-width: 15rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container-input span {
+    color: white;
+    font-size: 1rem;
+}
+
+.slider {
+    margin: 0.5rem;
+}
+
+.button-cta {
+    border: none;
+    background: #93291E;
+    border-radius: 10vh;
+    cursor: pointer;
+    padding: 0.75rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.container-password {
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    text-align: center;
+    margin-top: 3rem;
+    color: white;
+    gap: 0.5rem;
+}
+
+.password {
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #93291E;
+    border-radius: 10px;
+    margin: 0.5rem;
+    padding: 0.75rem;
+    transition: transform 0.5s;
+}
+
+.title-secondary {
+    text-align: center;
+    max-width: 20rem;
+    color: white;
+}
+
+.tooltip {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide {
+    display: none;
+}
+
+.container-password:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
